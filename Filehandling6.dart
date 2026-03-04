@@ -1,13 +1,12 @@
 import 'dart:io';
 
 void main(){
-  File file = File("fuction.dart");
+  File file = File('hello.txt');
   if(file.existsSync()){
     file.deleteSync();
     print("Deleted");
   }
   else{
-    print("file not found");
+    print("File not found");
   }
-  
 }
